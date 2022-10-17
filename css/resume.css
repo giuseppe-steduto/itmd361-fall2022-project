@@ -1,0 +1,98 @@
+@import "navbar.css";
+
+body {
+    background-image: url("../media/background_blur.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img-container img {
+    width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 75px;
+    border: 2px solid #a3b5d3;
+}
+
+#main {
+    padding-top: 5rem;
+    width: 95%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.card-glassmorphism {
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 15px;
+    margin-top: 2rem;
+    padding: 2rem;
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: all 0.25s ease;
+    backface-visibility: hidden;
+}
+
+.card-glassmorphism:hover {
+    transform: scale(1.02);
+    backface-visibility: hidden;
+}
+
+.card-glassmorphism h2 {
+    color: #5079b9;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-8-4 {
+    grid-template-columns: 200px auto;
+}
+
+.contact-container + h1 {
+    height: 25%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75%;
+}
+
+.contact-container button {
+    background-color: #a3b5d3;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 5px 15px;
+}
+
+.row-caption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-caption p:last-child {
+    font-style: italic;
+    color: #666;
+}
+
+.divider {
+    border-bottom: 1px solid #ddd;
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    border-top: 2px solid #a3b5d3;
+}

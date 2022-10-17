@@ -1,0 +1,40 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    list-style: none;
+    background-color: #a3b5d3;
+    justify-content: center;
+}
+ul.nav li {
+    padding: 1em;
+    text-decoration: none;
+}
+
+ul.nav li.active {
+    padding: 1em;
+    background-color: #deebff;
+    color: #a3b5d3;
+    text-decoration: none;
+}
+
+ul.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+ul.nav li:hover, ul.nav li.active a {
+    color: #3e5070;
+}

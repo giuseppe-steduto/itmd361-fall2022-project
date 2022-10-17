@@ -3,50 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>Giuseppe Steduto's Resume</title>
+  <link rel="stylesheet" href="css/resume.css">
 </head>
 <body>
-  <ul>
-    <li><a href="#">Resume</a> </li>
-    <li><a href="carbonara.html">How to make the perfect carbonara</a> </li>
-    <li><a href="neuroengineering.html">Neurodegeneration and cache memories: a creative insight on the brain from the world of computer science</a> </li>
-  </ul>
+<ul class="nav">
+  <li class="active"><a href="#">Resume</a> </li>
+  <li><a href="carbonara.html">Carbonara recipe</a> </li>
+  <li><a href="neuroengineering.html">Neurodegeneration article</a> </li>
+</ul>
 
-  <hr/>
 
-  <img src="media/propic.png" alt="Giuseppe Steduto">
+<div id="main">
   <h1>Giuseppe Steduto - Resume</h1>
-  <section>
-    <h2><u>Contacts</u></h2>
-    <a href="mailto:giuseppe@steduto.it">giuseppe@steduto.it</a> | <a href="https://www.linkedin.com/in/giuseppe-steduto/">Linkedin</a> | <a href="https://github.com/giuseppe-steduto">GitHub</a>
-  </section>
 
-  <section>
-    <h2><u>Education</u></h2>
-    <h4>Politecnico Di Milano</h4>
-    <p>B.S. Computer Engineering | GPA: 29.6/30 | Milan, Italy | Sep 2020 - July 2023</p>
+  <div class="card-glassmorphism">
+    <div class="grid grid-8-4">
+      <div class="col-4 img-container">
+        <img src="media/propic.png" alt="Giuseppe Steduto">
+      </div>
+      <div class="col-8">
+        <h2>Contacts</h2>
+        <div class="contact-container">
+          <a href="mailto:giuseppe@steduto.it"><button>Send me an email</button></a>
+          <a href="https://www.linkedin.com/in/giuseppe-steduto/"><button>Check out my LinkedIn profile</button></a>
+          <a href="https://github.com/giuseppe-steduto"><button>Check out my GitHub profile</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-glassmorphism">
+    <h2>Education</h2>
+    <div class="row-caption">
+      <h4>Politecnico Di Milano</h4>
+      <p>Milan, Italy</p>
+    </div>
+    <div class="row-caption">
+      <p>B.S. Computer Engineering | GPA: 29.6/30</p>
+      <p>Sep 2020 - July 2023</p>
+    </div>
     <ul>
       <li>Main coursework: Database management, Networking, Operating systems, Algorithms and Data Structures</li>
       <li>Major: Computer Engineering</li>
       <li> Member of Google Developer Student Club, MESA and BEST student associations</li>
     </ul>
 
-    <h4>Illinois Institute of Technology</h4>
-    <p>Student exchange | Chicago, USA | Aug 2022 - Dec 2022</p>
+    <div class="divider">
+    </div>
+
+    <div class="row-caption">
+      <h4>Illinois Institute of Technology</h4>
+      <p>Chicago, USA</p>
+    </div>
+    <div class="row-caption">
+      <p>Student exchange in Computer Engineering</p>
+      <p>Aug 2022 - Dec 2022</p>
+    </div>
     <ul>
       <li> Member of Association for Computer Machinery and CyberHawks</li>
     </ul>
 
-    <h4>IISS L. Di Maggio</h4>
-    <p>High school diploma | GPA: 9.9/10 | Final grade: 100/100 with honors San Giovanni Rotondo, Italy | Sep 2015 - Jun 2020</p>
-    <ul>
-      <li> Member of Association for Computer Machinery and CyberHawks</li>
-    </ul>
-  </section>
+    <div class="divider">
+    </div>
 
-  <section>
-    <h2><u>Work Experience</u></h2>
-    <h4>Full-stack Web Developer</h4>
-    <p>Grupem | Remote | Dec 2020 - present</p>
+    <div class="row-caption">
+      <h4>IISS L. Di Maggio</h4>
+      <p>San Giovanni Rotondo, Italy</p>
+    </div>
+    <div class="row-caption">
+      <p>High school diploma | GPA: 9.9/10 | Final grade: 100/100 with honors</p>
+      <p>Sep 2015 - Jun 2020</p>
+    </div>
+  </div>
+
+  <div class="card-glassmorphism">
+    <h2>Work Experience</h2>
+    <div class="row-caption">
+      <h4>Full-stack Web Developer</h4>
+      <p>Remote</p>
+    </div>
+    <div class="row-caption">
+      <p>Grupem</p>
+      <p>Dec 2020 - present</p>
+    </div>
     <ul>
       <li>Designed and created a web application consisting of a user dashboard and a complex relational database leveraging Laravel,
         PHP, MySQL for the backend and ReactJS for the frontend, improving the user satisfaction by 300%.</li>
@@ -54,39 +93,72 @@
         that was responsible for developing a mobile application.</li>
     </ul>
 
-    <h4>Student Researcher</h4>
-    <p>Illinois Institute of Technology | Chicago, USA | Sep 2022 - present</p>
+    <div class="divider">
+    </div>
+
+    <div class="row-caption">
+      <h4>Student Researcher</h4>
+      <p>Chicago, USA</p>
+    </div>
+    <div class="row-caption">
+      <p>Illinois Institute of Technology</p>
+      <p>Sep 2022 - present</p>
+    </div>
     <ul>
-      <li> Member of Association for Computer Machinery and CyberHawks</li>
+      <li>Currently automating a computer vision tool for early detection of diabetic retinopathy starting from fluorescein angiography images.</li>
     </ul>
 
-    <h4>IT Team Leader</h4>
-    <p>Milan Engineering Student Association  Milan, Italy | Dec 2021 - Jul 2022</p>
+    <div class="divider">
+    </div>
+
+    <div class="row-caption">
+      <h4>IT Team Leader</h4>
+      <p>Milan, Italy</p>
+    </div>
+    <div class="row-caption">
+      <p>Milan Engineering Student Association  </p>
+      <p>Dec 2021 - Jul 2022</p>
+    </div>
     <ul>
       <li> Trained and directed an international team composed of 11 persons in building a website with Wordpress and custom PHP
         plugins to showcase the work of the association, enhancing our online presence.</li>
     </ul>
-  </section>
+  </div>
 
-  <section>
-    <h2><u>Selected Projects</u></h2>
-    <h4>Automated Lung Cancer Identification in PET/CT Imaging with Halide</h4>
-    <p>NECSTCamp - Politecnico di Milano Oct 2021 - Jan 2022</p>
+  <div class="card-glassmorphism">
+    <h2>Selected Projects</h2>
+    <div class="row-caption">
+      <h4>Automated Lung Cancer Identification in PET/CT Imaging with Halide</h4>
+      <p>Milan, Italy</p>
+    </div>
+    <div class="row-caption">
+      <p>NECSTCamp - Politecnico di Milano</p>
+      <p>Oct 2021 - Jan 2022</p>
+    </div>
     <ul>
       <li>Rewrote and developed part of a computer vision tool aiming at detecting lung cancer in PET/CT scans employing the Halide
         language as a C++ library, improving the overall performance by 45%.</li>
     </ul>
 
-    <h4>Techseum - Technological Museum</h4>
-    <p>IISS L. Di Maggio Sep 2020 - May 2021</p>
+    <div class="divider">
+    </div>
+
+    <div class="row-caption">
+      <h4>Techseum - Technological Museum</h4>
+      <p>San Giovanni Rotondo, Italy</p>
+    </div>
+    <div class="row-caption">
+      <p>IISS L. Di Maggio</p>
+      <p>Sep 2020 - May 2021</p>
+    </div>
     <ul>
       <li> Led a team that created a full-stack web app used by 500+ tourists to interactively visit a museum with HTML5, PHP,
         JQuery and CSS. Our work also resulted in a presentation at ”Festa dei Musei 2018”, an important tourism fair.</li>
     </ul>
-  </section>
+  </div>
 
-  <section>
-    <h2><u>Honors and Awards</u></h2>
+  <div class="card-glassmorphism">
+    <h2>Honors and Awards</h2>
     <ul>
       <li>Awarded ”Alfiere del Lavoro 2020” by the President of the Italian Republic as one of the best 25 Italian students </li>
       <li> Awarded ”Best Freshmen” prize, a scholarship for being in the top 5% university undergraduates</li>
@@ -96,16 +168,20 @@
       <li> Obtained a study scholarship at Atlas School, Dublin (IE) - September 2019</li>
       <li> Earned a study scholarship at Kings College, Oxford (UK) - June 2019</li>
     </ul>
-  </section>
+  </div>
 
-  <section>
-    <h2><u>Courses and Certifications</u></h2>
+  <div class="card-glassmorphism">
+    <h2>Courses and Certifications</h2>
     <ul>
       <li>Beginner Rust - A Speedy Tutorial (ETH Zurich) </li>
       <li>Cyberchallenge.it: Cybersecurity training program (Politecnico di Milano) </li>
       <li>AWS Cloud Practitioner (Politecnico di Milano) </li>
       <li>Cisco NetAcad CCNA (IISS L. Di Maggio) </li>
     </ul>
-  </section>
+  </div>
+</div>
+<footer>
+  Created with ♥ by Giuseppe Steduto
+</footer>
 </body>
 </html>
