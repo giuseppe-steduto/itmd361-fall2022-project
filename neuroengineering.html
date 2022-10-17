@@ -3,71 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <title>A new perspective on cognitive decline inspired by computer science</title>
+  <link rel="stylesheet" href="css/neuroengineering.css">
 </head>
 <body>
-
-  <ul>
+  <ul class="nav">
     <li><a href="index.html">Resume</a> </li>
-    <li><a href="carbonara.html">How to make the perfect carbonara</a> </li>
-    <li><a href="#">Neurodegeneration and cache memories: a creative insight on the brain from the world of computer science</a> </li>
+    <li><a href="carbonara.html">Carbonara recipe</a> </li>
+    <li class="active"><a href="neuroengineering.html">Neurodegeneration article</a> </li>
   </ul>
 
-  <h1>A new perspective on cognitive decline inspired by computer science</h1>
-  <p>
-    Many people are biased by the idea that human memory is a non-optimal data structure: we keep forgetting things and the more we age, the more frustrating and frequent this gets. But Computer Science gives us an interesting insight on the reason why this happens - and it may totally change the way you think about your brain.
-  </p>
-  <p>
-      DISCLAIMER: For the sake of convenience and to not get off track, in this article I will over-simplify some concepts about memory hierarchy and computer architecture.
-  </p>
-  <hr />
+  <div id="title-container">
+    <div class="main">
+      <h1>A new perspective on cognitive decline inspired by computer science</h1>
+    </div>
+  </div>
 
-  <h2>What's the point of memory hierarchy</h2>
-  <p>
-    Computer science is all about trade-offs.
-  </p>
-  <p>
-    When engineers had to choose the types of memory to build computers with, they soon found out that they could have either great speed or great storage capacity, but not both at the same time. The problem, in laymen's terms, is that the faster your memory is, the less information it can store. That's why computer architectures have different kinds of memory:
-  </p>
-  <ul>
-    <li>Cache memory is the fastest, but can store very little amounts of data.</li>
-    <li>Random Access Memory (RAM) is quite fast, but modern RAMs can "only" store up to 32GB of data, and, just like the cache, it is volatile (that means that you'll lose the data as soon as you turn off the computer).</li>
-    <li>Hard drive is the slowest type of memory, but can store a huge quantity of information.</li>
-  </ul>
-  <p>
-    When the processor has to retrieve data for its calculations, it first looks into the cache memory. If it finds the desired information, we call it a cache hit: the data is retrieved fast and easily. However, the available space in the cache memory is not unlimited and sometimes the processor cannot find the data it needs in the cache, and have to look it up in the RAM. This is called a cache miss.
-    In general, cache misses takes 10 to 100 times as much time as cache hits, and can significantly slow a program down.
-  </p>
+  <div class="main">
+    <div class="subtitle">
+      <p>
+        Many people are biased by the idea that human memory is a non-optimal data structure: we keep forgetting things and the more we age, the more frustrating and frequent this gets. But Computer Science gives us an interesting insight on the reason why this happens - and it may totally change the way you think about your brain.
+      </p>
+      <p class="disclaimer">
+        DISCLAIMER: For the sake of convenience and to not get off track, in this article I will over-simplify some concepts about memory hierarchy and computer architecture.
+      </p>
+    </div>
 
-  <h2>
-    When things start to get slow
-  </h2>
-  <p>
-    As the processor elaborates data, it stores it in the cache, so that it can easily recover it and use it later. It's all fun and games until the cache fills up and, in order to store more recent data, some of the variables previously stored in there have to be moved to the RAM, to make space for the new ones. If the CPU is constantly swapping stuff between the RAM and the cache, then the performance of the computer will drastically downgrade.
-  </p>
+    <div class="subsection-title">
+      <img src="media/divider_left.jpg" alt="Divider left" />
+      <h2>What's the point of memory hierarchy</h2>
+      <img src="media/divider_right.jpg" alt="Divider right" />
+    </div>
+    <p>
+      Computer science is all about trade-offs.
+    </p>
+    <p>
+      When engineers had to choose the types of memory to build computers with, they soon found out that they could have either great speed or great storage capacity, but not both at the same time. The problem, in laymen's terms, is that the faster your memory is, the less information it can store. That's why computer architectures have different kinds of memory:
+    </p>
+    <ul>
+      <li>Cache memory is the fastest, but can store very little amounts of data.</li>
+      <li>Random Access Memory (RAM) is quite fast, but modern RAMs can "only" store up to 32GB of data, and, just like the cache, it is volatile (that means that you'll lose the data as soon as you turn off the computer).</li>
+      <li>Hard drive is the slowest type of memory, but can store a huge quantity of information.</li>
+    </ul>
+    <p>
+      When the processor has to retrieve data for its calculations, it first looks into the cache memory. If it finds the desired information, we call it a cache hit: the data is retrieved fast and easily. However, the available space in the cache memory is not unlimited and sometimes the processor cannot find the data it needs in the cache, and have to look it up in the RAM. This is called a cache miss.
+      In general, cache misses takes 10 to 100 times as much time as cache hits, and can significantly slow a program down.
+    </p>
 
-  <h2>
-    Okay, but… what does the brain have to do with this?
-  </h2>
-  <p>A common metaphor is that our brains are like computers.</p>
-  <p>Of course, no one would mistake the gooey material inside your brain for the CPU inside your laptop, but <a href="https://www.technologyreview.com/2021/08/25/1030861/is-human-brain-computer">there are many important similarities</a>: the brain is the place where information is processed, calculations are made, and, most importantly, experiences and memories are stored.</p>
-  <p>And that's where cognitive decline kicks in. We usually think about aging-related neural problems as an issue concerning storage capacity: when we get older, we just tend to forget stuff. What if, instead, it was a memory organization problem?</p>
+    <div class="subsection-title">
+      <img src="media/divider_left.jpg" alt="Divider left" />
+      <h2>When things start to get slow</h2>
+      <img src="media/divider_right.jpg" alt="Divider right" />
+    </div>
+    <p>
+      As the processor elaborates data, it stores it in the cache, so that it can easily recover it and use it later. It's all fun and games until the cache fills up and, in order to store more recent data, some of the variables previously stored in there have to be moved to the RAM, to make space for the new ones. If the CPU is constantly swapping stuff between the RAM and the cache, then the performance of the computer will drastically downgrade.
+    </p>
 
-  <h2>
-    The brain cache miss
-  </h2>
-  <p>A new way of thinking about it is imagining that our brains have huge storage capacity, but, just like computers, a relatively small cache memory. The amount of information our brains process every second is astonishing; the older we get, the more data we have to store somewhere in our minds. At a certain point in our life, the space in the brain cache will fill up, and some pieces of that data will be inevitably moved to the brain RAM, or even to the brain hard disk. Even though in this way our brains have recent, important information always at hand, sometimes a "cache miss" will occur. Maybe what happens when we experience temporary mental lapses or when it looks like we can't remember something is just that our brain has to retrieve that information from its hard drive!</p>
+    <div class="subsection-title">
+      <img src="media/divider_left.jpg" alt="Divider left" />
+      <h2>Okay, but… what does the brain have to do with this?</h2>
+      <img src="media/divider_right.jpg" alt="Divider right" />
+    </div>
+    <p>A common metaphor is that our brains are like computers.</p>
+    <p>Of course, no one would mistake the gooey material inside your brain for the CPU inside your laptop, but <a href="https://www.technologyreview.com/2021/08/25/1030861/is-human-brain-computer">there are many important similarities</a>: the brain is the place where information is processed, calculations are made, and, most importantly, experiences and memories are stored.</p>
+    <p>And that's where cognitive decline kicks in. We usually think about aging-related neural problems as an issue concerning storage capacity: when we get older, we just tend to forget stuff. What if, instead, it was a memory organization problem?</p>
 
-  <h2>Final thoughts</h2>
-  <p>This article deliberately ignores the complexity of the brain or the policies that determine which pieces of information stay in the cache (LRU, MSU, RRIP, and so on), so please take it with a grain of salt. However, its main intent is not to be a scientifically accurate paper about how our minds work, but rather to show how some apparently unrelated subjects can teach us so much about each other, and give us a creative insight from which we can start building further knowledge.</p>
-  <p>And, who knows, maybe someday a breakthrough in neuroscience will stem right from the "brain cache miss" idea :)</p>
-  <p>Let me conclude with a sentence from "Algorithms to live by", the book from which this article was inspired and that first made me think in this creative way about the brain:</p>
-  So as you age, and begin to experience these sporadic latencies, take heart: the length of a delay is partly an indicator of the extent of your experience. The effort of retrieval is a testament to how much you know. And the rarity of those lags is a testament to how well you've arranged it: keeping the most important things closest to hand.
-  - "Algorithms to live by",  Brian Christian & Tom Griffiths
+    <div class="subsection-title">
+      <img src="media/divider_left.jpg" alt="Divider left" />
+      <h2>The brain cache miss</h2>
+      <img src="media/divider_right.jpg" alt="Divider right" />
+    </div>
+    <p>A new way of thinking about it is imagining that our brains have huge storage capacity, but, just like computers, a relatively small cache memory. The amount of information our brains process every second is astonishing; the older we get, the more data we have to store somewhere in our minds. At a certain point in our life, the space in the brain cache will fill up, and some pieces of that data will be inevitably moved to the brain RAM, or even to the brain hard disk. Even though in this way our brains have recent, important information always at hand, sometimes a "cache miss" will occur. Maybe what happens when we experience temporary mental lapses or when it looks like we can't remember something is just that our brain has to retrieve that information from its hard drive!</p>
 
-  <h2>More resources</h2>
-  <h4>If you want to learn more about cache memories</h4>
-  <video controls>
-    <source src="media/video_cache.mp4" type="video/mp4">
-  </video>
+    <div class="subsection-title">
+      <img src="media/divider_left.jpg" alt="Divider left" />
+      <h2>Final thoughts</h2>
+      <img src="media/divider_right.jpg" alt="Divider right" />
+    </div>
+    <p>This article deliberately ignores the complexity of the brain or the policies that determine which pieces of information stay in the cache (LRU, MSU, RRIP, and so on), so please take it with a grain of salt. However, its main intent is not to be a scientifically accurate paper about how our minds work, but rather to show how some apparently unrelated subjects can teach us so much about each other, and give us a creative insight from which we can start building further knowledge.</p>
+    <p>And, who knows, maybe someday a breakthrough in neuroscience will stem right from the "brain cache miss" idea :)</p>
+    <p>Let me conclude with a sentence from "Algorithms to live by", the book from which this article was inspired and that first made me think in this creative way about the brain:</p>
+    <blockquote>
+      <p>So as you age, and begin to experience these sporadic latencies, take heart: the length of a delay is partly an indicator of the extent of your experience. The effort of retrieval is a testament to how much you know. And the rarity of those lags is a testament to how well you've arranged it: keeping the most important things closest to hand.</p>
+      <p>- "Algorithms to live by",  Brian Christian & Tom Griffiths</p>
+    </blockquote>
+
+    <div class="subsection-title">
+      <img src="media/divider_left.jpg" alt="Divider left" />
+      <h2>More resources</h2>
+      <img src="media/divider_right.jpg" alt="Divider right" />
+    </div>
+    <video controls>
+      <source src="media/video_cache.mp4" type="video/mp4">
+    </video>
+    <div class="video-caption">
+      <p>If you want to learn more about cache memories</p>
+    </div>
+  </div>
+
+  <footer>
+    Created with ♥ by Giuseppe Steduto
+  </footer>
 </body>
 </html>

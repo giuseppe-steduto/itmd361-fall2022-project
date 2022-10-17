@@ -1,0 +1,73 @@
+@import "navbar.css";
+
+.main {
+    padding-top: 1rem;
+    width: 95%;
+    max-width: 720px;
+    margin: auto;
+}
+
+#title-container > div {
+    padding-top: 5rem;
+    width: 95%;
+    max-width: 960px;
+    margin: auto;
+    color: white;
+}
+
+#title-container {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    background-image: url("../media/brain-background.jpg");
+    background-size: cover;
+    -moz-box-shadow: inset 0 70px 100px -10px #000000;
+    -webkit-box-shadow: inset 0 70px 100px -10px #000000;
+    box-shadow: inset 0 -70px 400px -10px #000000;
+}
+
+.subtitle {
+    color: #555;
+}
+
+.disclaimer {
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 20px;
+    color: #401e07;
+}
+
+.subsection-title {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.subsection-title img {
+    width: 15%;
+}
+
+p a {
+    color: black;
+}
+
+blockquote {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid #a3b5d3;
+    font-style: italic;
+    color: #3e5070;
+}
+
+video {
+    width: 100%;
+}
+.video-caption {
+    text-align: center;
+    color: #666666;
+    font-size: 0.8em;
+}

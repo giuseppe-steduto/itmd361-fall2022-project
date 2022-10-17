@@ -27,7 +27,7 @@ body {
     margin-top: 2rem;
     padding: 2rem;
     /*box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;*/
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
     transition: all 0.25s ease;
     backface-visibility: hidden;
 }
@@ -86,13 +86,4 @@ body {
     margin-left: 25%;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
-}
-
-footer {
-    width: 100%;
-    margin-top: 2rem;
-    padding: 2rem;
-    text-align: center;
-    background-color: white;
-    border-top: 2px solid #a3b5d3;
 }

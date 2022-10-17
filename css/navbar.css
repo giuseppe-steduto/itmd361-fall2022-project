@@ -15,8 +15,9 @@ ul.nav {
     margin-bottom: 0;
     flex-direction: row;
     list-style: none;
-    background-color: #a3b5d3;
+    background-color: white;
     justify-content: center;
+    border-bottom: 2px solid #deebff;
 }
 ul.nav li {
     padding: 1em;
@@ -32,9 +33,18 @@ ul.nav li.active {
 
 ul.nav a {
     text-decoration: none;
-    color: white;
+    color: #3e5070;
     font-weight: 700;
 }
 ul.nav li:hover, ul.nav li.active a {
     color: #3e5070;
+}
+
+footer {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    border-top: 2px solid #a3b5d3;
 }
