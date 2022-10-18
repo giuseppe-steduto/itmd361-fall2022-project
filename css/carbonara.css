@@ -72,7 +72,7 @@
 }
 
 #directions li {
-  list-style: url('/media/icons/spaghetti-list-icon.png');
+  list-style: url('../media/icons/spaghetti-list-icon.png');
 }
 
 #recipe-information span {
