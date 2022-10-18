@@ -3,52 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <title>How to make the perfect carbonara</title>
+  <link rel="stylesheet" href="css/carbonara.css" />
+  <link rel="stylesheet" href="css/reset.css" />
 </head>
 <body>
-  <ul>
+  <ul class="nav">
     <li><a href="index.html">Resume</a> </li>
-    <li><a href="#">How to make the perfect carbonara</a> </li>
-    <li><a href="neuroengineering.html">Neurodegeneration and cache memories: a creative insight on the brain from the world of computer science</a> </li>
+    <li class="active"><a href="#">Carbonara recipe</a> </li>
+    <li><a href="neuroengineering.html">Neurodegeneration article</a> </li>
   </ul>
 
   <hr/>
 
-  <h1>How to make the perfect Carbonara</h1>
-  <h2>What is Carbonara?</h2>
-  <p>Carbonara is a masterpiece from the Italian cuisine.</p>
-  <p>
-    It is a pasta dish from Rome, made with rather simple ingredients, but that when assembled in the right way can create one of the most delicious meal you will ever taste
-    (see pics below for reference).
-  </p>
-  <img src="media/carbonara.png" alt="Carbonara dish with spaghetti">
-  <img src="media/carbonara_mezze_maniche.png" alt="Carbonara dish with mezze maniche">
+  <div id="wrapper">
+    <div id="main">
+      <h1>How to make the perfect Carbonara</h1>
+      <h2>What is Carbonara?</h2>
+      <p>Carbonara is a masterpiece from the Italian cuisine.</p>
+      <p style="margin-bottom: 2rem">
+        It is a pasta dish from Rome, made with rather simple ingredients, but that when assembled in the right way can create one of the most delicious meal you will ever taste
+        (see pics below for reference).
+      </p>
+      <div id="img-container">
+        <img src="media/carbonara.png" alt="Carbonara dish with spaghetti">
+        <p>Carbonara made with spaghetti</p>
+        <img src="media/carbonara_mezze_maniche.png" alt="Carbonara dish with mezze maniche">
+        <p>Carbonara made with mezze maniche</p>
+      </div>
 
-  <h2>Brief history of Carbonara</h2>
-  The true origins of Carbonara still remain unclear to these days.
-  Some connect it to pasta cacio e uova, a Neapolitan dish of pasta tossed with melted lard, beaten raw eggs, and cheese, as documented in Ippolito Cavalcanti's 1839 Neapolitan cookbook. Because the name comes from the word carbonaro, “coal burner,” some believe the dish was created as a hearty easy-to-make meal by men working outdoors for long periods. Others trace it to the Allied liberation of Rome in 1944, with American GIs bringing their daily ration of eggs and bacon to local restaurants to add to the limited Italian menu. Supporting this story is the first written reference to the dish in newspaper La Stampa in 1950, describing it as a dish prized by American servicemen. Shortly after, carbonara also appears in Elizabeth David’s classic 1954 book Italian Food.
+      <h2>Authentic Carbonara recipe</h2>
+      <div id="recipe-information">
+        <img src="media/icons/clock.png" alt="Time: ">
+        <span class="recipe-information-span">35 min</span>
 
-  <h2>Authentic Carbonara recipe</h2>
-  <h3>Ingredients</h3>
-  Doses for 2 persons
-  <ul>
-    <li>200g (or 8 ounces) of spaghetti or <a href="https://www.google.com/search?q=mezze+maniche">mezze maniche</a></li>
-    <li>3 eggs</li>
-    <li>100g (or 4 ounces) of <a href="https://www.google.com/search?q=guanciale+maiale">guanciale</a> (do not use bacon!) </li>
-    <li>Black pepper</li>
-    <li>100g (or 4 ounces) of Pecorino cheese (do not use parmesan!)</li>
-  </ul>
+        <img src="media/icons/people.png" alt="People: ">
+        <span class="recipe-information-span">2 Persons</span>
 
-  <h3>Directions</h3>
-  <ol>
-    <li>First, boil the water for the pasta while you prepare the carbonara sauce. Remember: 1 liter (4 cups) of water for every 100 g (3,50 oz) of pasta and 15 g (1 tablespoon) of coarse salt per liter (4 cups) of water.</li>
-    <li>Cut the guanciale into small pieces (cubes, slices… as you prefer) then cook in a skillet over medium heat for about 2 to 3 minutes. Stir occasionally so that it cooks evenly. The more the guanciale cooks, the more its fat will melt and its meat will become crispy. The level of cooking is up to you, depending on your taste. Some people like their guanciale well cooked and others prefer it soft. No need for oil: guanciale is already fatty, oily and fabulous on its own.</li>
-    <li>Now prepare the pecorino cream. So, in a bowl put one whole egg, two egg yolks and pecorino Romano cheese. You don't need to add salt, since the cheese is already salty.</li>
-    <li>Add some freshly ground black pepper. Then, mix quickly with a fork – or a hand whisk – until you have a creamy sauce. This egg and pecorino cheese sauce should be quite thick. Set it aside for the moment.</li>
-    <li>The water should now be boiling so add the salt and cook the spaghetti (without breaking them). Cook the spaghetti al dente, following the cooking time found on the pasta package.</li>
-    <li>Using a spoon for spaghetti, drain the pasta when ready. Then place them in the skillet, over high heat, to season well with the guanciale.</li>
-    <li>When the spaghetti and guanciale sizzle in the pan, TURN OFF THE HEAT, otherwise the eggs will overcook and you’ll end up with scrambled eggs and pasta! Now quickly add the eggs and pecorino cream to the hot pasta and stir. The pan is not too hot, this way the eggs will cook without lumps. If you notice that your carbonara is too runny, add some grated pecorino cheese. On the other hand, if you see that it’s too sticky and dense, add 1 or 2 tablespoons of cooking water.</li>
-    <li>Authentic spaghetti carbonara is ready. So, with the help of a ladle and a fork, create a pasta nest and place it on a plate.</li>
-    <li>Add the guanciale (what’s left in the pan), freshly ground black pepper and grated pecorino romano to taste. Serve and enjoy!</li>
-  </ol>
+        <img src="media/icons/beginner.png" alt="Difficulty: ">
+        <span class="recipe-information-span">Beginner</span>
+      </div>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>200g (or 8 ounces) of spaghetti or <a href="https://www.google.com/search?q=mezze+maniche">mezze maniche</a></li>
+        <li>3 eggs</li>
+        <li>100g (or 4 ounces) of <a href="https://www.google.com/search?q=guanciale+maiale">guanciale</a> (do not use bacon!) </li>
+        <li>Black pepper</li>
+        <li>100g (or 4 ounces) of Pecorino cheese (do not use parmesan!)</li>
+      </ul>
+
+      <div id="directions">
+        <h3>Directions</h3>
+        <ol>
+          <li>First, boil the water for the pasta while you prepare the carbonara sauce. Remember: 1 liter (4 cups) of water for every 100 g (3,50 oz) of pasta and 15 g (1 tablespoon) of coarse salt per liter (4 cups) of water.</li>
+          <li>Cut the guanciale into small pieces (cubes, slices… as you prefer) then cook in a skillet over medium heat for about 2 to 3 minutes. Stir occasionally so that it cooks evenly. The more the guanciale cooks, the more its fat will melt and its meat will become crispy. The level of cooking is up to you, depending on your taste. Some people like their guanciale well cooked and others prefer it soft. No need for oil: guanciale is already fatty, oily and fabulous on its own.</li>
+          <li>Now prepare the pecorino cream. So, in a bowl put one whole egg, two egg yolks and pecorino Romano cheese. You don't need to add salt, since the cheese is already salty.</li>
+          <li>Add some freshly ground black pepper. Then, mix quickly with a fork – or a hand whisk – until you have a creamy sauce. This egg and pecorino cheese sauce should be quite thick. Set it aside for the moment.</li>
+          <li>The water should now be boiling so add the salt and cook the spaghetti (without breaking them). Cook the spaghetti al dente, following the cooking time found on the pasta package.</li>
+          <li>Using a spoon for spaghetti, drain the pasta when ready. Then place them in the skillet, over high heat, to season well with the guanciale.</li>
+          <li>When the spaghetti and guanciale sizzle in the pan, TURN OFF THE HEAT, otherwise the eggs will overcook and you’ll end up with scrambled eggs and pasta! Now quickly add the eggs and pecorino cream to the hot pasta and stir. The pan is not too hot, this way the eggs will cook without lumps. If you notice that your carbonara is too runny, add some grated pecorino cheese. On the other hand, if you see that it’s too sticky and dense, add 1 or 2 tablespoons of cooking water.</li>
+          <li>Authentic spaghetti carbonara is ready. So, with the help of a ladle and a fork, create a pasta nest and place it on a plate.</li>
+          <li>Add the guanciale (what’s left in the pan), freshly ground black pepper and grated pecorino romano to taste. Serve and enjoy!</li>
+        </ol>
+      </div>
+    </div>
+    <div id="extras">
+      <h2>Brief history of Carbonara</h2>
+      The true origins of Carbonara still remain unclear to these days.
+      Some connect it to pasta cacio e uova, a Neapolitan dish of pasta tossed with melted lard, beaten raw eggs, and cheese, as documented in Ippolito Cavalcanti's 1839 Neapolitan cookbook. Because the name comes from the word carbonaro, “coal burner,” some believe the dish was created as a hearty easy-to-make meal by men working outdoors for long periods. Others trace it to the Allied liberation of Rome in 1944, with American GIs bringing their daily ration of eggs and bacon to local restaurants to add to the limited Italian menu. Supporting this story is the first written reference to the dish in newspaper La Stampa in 1950, describing it as a dish prized by American servicemen. Shortly after, carbonara also appears in Elizabeth David’s classic 1954 book Italian Food.
+    </div>
+    <div id="extras-2">
+      <img src="media/carbonara_mistakes.webp" alt="How a carbonara should NOT look" />
+      <div>
+        <h2>Common mistakes</h2>
+        <ul>
+          <li>Using cream. Seriously, don't use any type of cream or milk if you want to make the classic carbonara.</li>
+          <li>Letting the eggs cook too much. If you don't like the idea of eating raw eggs, you can pasteurize them, even if this process is going to make the recipe a bit harder.</li>
+          <li>Using bacon instead of guanciale. It has to be called "guanciale". I know it's really hard to find in the US 😔, but you can go to any Eataly store, and you'll find it!</li>
+          <li>Cooking guanciale with oil, onions or garlic. Since this type of meat is really fatty and rich in flavor, it doesn't need anything to be put in the pan with.</li>
+          <li>Not using Pecorino cheese. Parmesan is tolerable, but you should really go for Pecorino if you aim for the authentic </li>
+          <li>Putting parsley on top at the end. This spoils both the aesthetics and the taste of the dish.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Created with ♥ by Giuseppe Steduto
+  </footer>
 </body>
 </html>
