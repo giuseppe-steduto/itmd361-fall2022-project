@@ -25,6 +25,10 @@
   box-shadow: inset 0 -70px 400px -10px #000000;
 }
 
+#title-container h1 {
+  font-family: "Courier New", serif;
+}
+
 .subtitle {
   color: #555;
 }
@@ -37,6 +41,7 @@ h2 {
   text-align: center;
   margin: 0 20px;
   color: #401e07;
+  font-family: "Courier New", serif;
 }
 
 .subsection-title {
